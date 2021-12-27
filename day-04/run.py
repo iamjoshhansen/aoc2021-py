@@ -1,5 +1,6 @@
 import time
 import sys
+import datetime
 
 
 class clr:
@@ -34,7 +35,7 @@ def run(solve, day: int, part=1):
     end = time.time()
     duration = end - start
     print()
-    print(f"{clr.DIM}Duration: {clr.BOLD}{duration * 1000}ms{clr.RESET}")
+    print(f"{clr.DIM}Duration: {clr.BOLD}{datetime.timedelta(duration)}ms{clr.RESET}")
     print()
     print(f"{clr.DARK}{clr.GREENBG} {answer} {clr.RESET}")
     print()
