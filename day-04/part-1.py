@@ -101,8 +101,8 @@ def solve(input: str):
     printBoards(boards, currentCallouts)
 
     print()
-    print(f'   Unmarked sum: {unmarkedSum}')
-    print(f'Winning callout: {winningCallout}')
+    print(f'   Unmarked sum: {clr.BOLD}{unmarkedSum}{clr.RESET}')
+    print(f'Winning callout: {clr.BOLD}{winningCallout}{clr.RESET}')
 
     return winningCallout * unmarkedSum
 
